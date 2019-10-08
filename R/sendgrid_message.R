@@ -18,8 +18,10 @@ msg <- paste0('{\"personalizations\":
               \"subject\": \"',mail$subject , '",
               \"content\": [{\"type\": \"text/plain\", \"value\": \"', mail$content$value , '\"}]',
               ifelse(mail$attachments$content == '', '',
-                     paste0(' \"attachments\": [{\"content\": \"',mail$attachments$content,
-                     '", \"type\": \"html\", \"filename\": \"',mail$attachments$filename,'\"}]')),
+                     paste0(',
+              \"attachments\": [{\"content\": \"',mail$attachments$content,
+             '\", \"type\": \"', mail$attachments$type,
+             '\", \"filename\": \"',mail$attachments$filename,'\"}]')),
               '}')
 return(msg)
 }
