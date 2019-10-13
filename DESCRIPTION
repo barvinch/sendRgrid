@@ -1,18 +1,17 @@
 Package: sendRgrid
 Title: Send Email with SendGrid and R
-Version: 0.0.0.9000
+Version: 0.0.1.0001
 Authors@R: 
     person(given = "Yuriy",
            family = "Barvinchenko",
            role = c("aut", "cre"),
            email = "barvinchenko@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Alternative library for sending email with SendGrid and R
+Description: Alternative library for sending email with SendGrid and R. version 0.0.0.9000 - first version, works with "to" only ("cc" not implemented) and only 1 attachment possible version 0.0.1.0001 - "cc" added
 License: MIT License
 Encoding: UTF-8
 LazyData: true
 Imports:
     base64enc,
-    httr,
-    jsonlite
+    httr
 RoxygenNote: 6.1.1

@@ -5,15 +5,15 @@
 #'
 #' partly from https://github.com/rhochreiter/sendgridR/
 #'
-#' @param ... list of characters
-#' @keywords regex
-#' @keywords or
+#' @param input character or list of characters
+#' @keywords email
+#' @keywords sendgrid
 #' @keywords string
 #' @export
 #' @examples
 #' sendgrid_json_emails(c('bar@example.com', 'foo@example.com'))
 #' # add name for email address with list
-#' sendgrid_json_emails(list(list('bar@example.com', ' bar_jocker'), 'foo@example.com'))
+#' sendgrid_json_emails(list(list('bar@example.com', ' bar_bar'), 'foo@example.com'))
 #
 sendgrid_json_emails <- function(input) {
   output <- ""
@@ -27,8 +27,8 @@ sendgrid_json_emails <- function(input) {
     }
     counter <- counter + 1
   }
-  if (length(input) > 1) {
-    output <-  paste0('[', output, ']')
-  }
+  # if (counter > 2) {
+    # output <-  paste0('[', output, ']')
+  # }
   return(output)
 }

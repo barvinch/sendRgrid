@@ -7,7 +7,7 @@
 sendgrid_json_emails(input)
 }
 \arguments{
-\item{...}{list of characters}
+\item{input}{character or list of characters}
 }
 \description{
 Make json list of emails from caracter vector
@@ -19,8 +19,8 @@ partly from https://github.com/rhochreiter/sendgridR/
 \examples{
 sendgrid_json_emails(c('bar@example.com', 'foo@example.com'))
 # add name for email address with list
-sendgrid_json_emails(list(list('bar@example.com', ' bar_jocker'), 'foo@example.com'))
+sendgrid_json_emails(list(list('bar@example.com', ' bar_bar'), 'foo@example.com'))
 }
-\keyword{or}
-\keyword{regex}
+\keyword{email}
+\keyword{sendgrid}
 \keyword{string}
