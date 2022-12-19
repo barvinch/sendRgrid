@@ -1,6 +1,6 @@
 #' Make json list of emails
 #'
-#' Make json list of emails from caracter vector
+#' Make json list of emails from character vector
 #'  strings test for email format to be added
 #'
 #' partly from https://github.com/rhochreiter/sendgridR/

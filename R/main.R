@@ -7,7 +7,7 @@
 #'
 #' @param em_to   list of characters
 #' @param em_cc   prefix, to be added on beginning of string
-#' @param em_from suffix, to be added on end of the strin
+#' @param em_from suffix, to be added on end of the string
 #' @param em_subject  separator, in normal paste(), here used as 'collapse' argument
 #' @param content_type
 #' @param content_value
@@ -189,7 +189,7 @@ add_attachment <- function(mail_base,
 #' finalize message as request body
 #'
 #' Takes chracter lines as input and paste it together with 2 linebreacks
-#'  Use black string (i.e. '') to add extra line
+#'  Use blank string (i.e. '') to add extra line
 #'
 #' @param mail list, mail created
 #' @keywords email

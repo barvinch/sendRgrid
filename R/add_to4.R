@@ -1,6 +1,6 @@
 #' add "to" email adresses
 #'
-#' cadd "to" email adresses to email base created earlier by email_base()
+#' add "to" email adresses to email base created earlier by email_base()
 #'
 #'
 #' @param mail_base base of email, created by email_base()

@@ -1,7 +1,7 @@
 #' compose message body from character lines
 #'
-#' Takes chracter lines as input and paste it together with 2 linebreacks
-#'  Use black string (i.e. '') to add extra line
+#' Takes character lines as input and paste it together with 2 line breaks
+#'  Use blank string (i.e. '') to add extra line
 #'
 #' @param ... list of characters
 #' @keywords email
